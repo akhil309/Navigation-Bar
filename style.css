@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    background-color: violet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.topnav{
+    overflow: hidden;
+    background-color:#333333;
+    text-align: center;  
+}
+
+.topnav a{
+    padding: 14px 16px;
+    color: #f2f2f2 ;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+}
+
+.topnav .login{
+    float: right;
+}
+
+.topnav .hamburger{
+    float: left;
+    cursor: pointer;
+}
+.dropdown{
+    float: right;
+    overflow: hidden;  
+}
+.dropdown .dropdownbtn{
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    background-color: inherit;
+    font-size: 17px;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 1s ease-in;
+}
+.dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.topnav a:hover,.dropdownbtn:hover{
+    color: #ff663b;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+
+/* For phones and extra small devices of width less than 600px*/
+
+@media only screen and (max-width:600px){
+    .topnav .navlinks{
+        display: none;
+        text-align: left;
+    }  
+    .topnav .logo{
+        margin: auto;
+        display: inline-block;
+        text-align: center; 
+    }
+    .dropdown{
+        float: none;
+    }
+
+    .dropdown-content{
+        position: relative;
+    }
+}
+
+/* For small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) and  (max-width:768px){
+    .topnav .navlinks{
+        display: none; 
+        text-align: left; 
+    }
+    .topnav .logo{
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+    }
+    .dropdown{
+        float: none;
+    }
+
+    .dropdown-content{
+        position: relative;
+    }
+}
+
+
+/* For medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .topnav .navlinks{
+        display: none;
+        text-align: left;
+    }
+    .topnav .logo{
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .dropdown{
+        float: none;
+    }
+    .dropdown-content{
+        position: relative;
+    }
+}
+
+/* For large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px){
+    .topnav .hamburger{
+        display: none;
+    }
+
+    .topnav a{
+        float: right;
+    }
+
+    .topnav .logo{
+        float: left;
+    }
+
+    .dropdown-content a{
+        float: none;
+    }
+    
+}
+
+
+/* For extra large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px){
+    .topnav .hamburger{
+        display: none;
+    }
+    .topnav a{
+        float: right;
+    }
+    .topnav .logo{
+        float: left;
+    }
+    .dropdown-content a{
+        float: none;
+    }
+  
+    
+}
+
